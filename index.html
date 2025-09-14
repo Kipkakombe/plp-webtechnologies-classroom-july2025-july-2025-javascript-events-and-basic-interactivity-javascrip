@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simbaa Veterinary Clinic survey form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1 id="main-header">🐾 Simbaa Veterinary Clinic</h1>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>We Value Your Feedback!</h2>
+            <p>Thank you for choosing Simbaa Veterinary Clinic. Please take a moment to fill this survey form.</p>
+        </section>
+
+        <section class="formsection">
+            <h3>Feedback Form</h3>
+            <form id="feedbackform" novalidate>
+                <div class="form-group">
+                    <label for="ownername">Your Full Name:</label>
+                    <input type="text" id="ownername" name="ownerName" required>
+                    <div class="errormessage"></div>
+                </div>
+
+                <div class="formgroup">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="errormessage"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="petname">Pet's Name:</label>
+                    <input type="text" id="petname" name="petName">
+                    <div class="errormessage"></div> </div>
+
+                <div class="formgroup">
+                    <label for="visitdate">Date of Visit:</label>
+                    <input type="date" id="visitdate" name="visitDate" required>
+                    <div class="errormessage"></div>
+                </div>
+
+                <div class="formgroup">
+                    <label for="comments">Feedback & Comments:</label>
+                    <textarea id="comments" name="comments" rows="5" required minlength="15"></textarea>
+                    <div class="errormessage"></div>
+                </div>
+                
+                <div class="formgroup checkboxgroup">
+                    <input type="checkbox" id="contact-permission" name="contactPermission" required>
+                    <label for="contactpermission">I agree to be contacted regarding my feedback.</label>
+                    <div class="error-message"></div>
+                </div>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+            <div id="successmessage" class="hidden">
+                <h3>Thank You! ✨</h3>
+                <p>Your feedback has been submitted successfully. We appreciate you taking the time to help us improve!</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Simbaa Veterinary Clinic. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
